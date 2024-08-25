@@ -54,12 +54,13 @@ The project is organized into several packages, each responsible for different a
    CreatePersons client1 = personsFactory.createPersons("username", "Name", "Surname", age, "Address", "email@example.com", SellerOrClient.CLIENT);
    CreatePersons seller1 = personsFactory.createPersons("username", "Name", "Surname", age, "Address", "email@example.com", SellerOrClient.SELLER);
 
+## Exceptions
+    WrongMessageException: Thrown when an invalid operation is attempted, such as creating a user with an existing username or insufficient funds for a purchase.
+
 ## Create Cars:
    ```java
   CarSelector carSelector = new CarSelector();
   CarsInterface car = carSelector.createCar("CarName", "Company", "Address", TypeOfCar.SEDAN, (Seller) seller, price, year, engineCapacity, "Color", mileage);
 
-## Exceptions
-    WrongMessageException: Thrown when an invalid operation is attempted, such as creating a user with an existing username or insufficient funds for a purchase.
 
 
